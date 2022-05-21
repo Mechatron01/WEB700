@@ -1,3 +1,14 @@
+/*********************************************************************************
+*  WEB700 – Assignment 1
+*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  
+*  No part of this assignment has been copied manually or electronically from any other source
+*  (including web sites) or distributed to other students.
+* 
+*  Name: Mohammed Muzakkir Ahmed Student ID: 128158219 Date: 21-05-2022
+*
+********************************************************************************/ 
+
+
 console.log("Hello World");
 
 function getRandomInt(min, max) {
@@ -8,7 +19,7 @@ function getRandomInt(min, max) {
 
 function httpRequest(httpverb,path){
 
-    
+
 
 serverVebs=['GET','GET','GET','POST','GET','POST']
 serverPaths=['/','/about','/contact','/login','/panel','/logout']
