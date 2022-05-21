@@ -8,6 +8,8 @@ function getRandomInt(min, max) {
 
 function httpRequest(httpverb,path){
 
+    
+
 serverVebs=['GET','GET','GET','POST','GET','POST']
 serverPaths=['/','/about','/contact','/login','/panel','/logout']
 serverResponses=['Welcome to WEB700 Assignment 1','This assignment was prepared by Student Name','Student Name: Student Email','User Logged In','Main Panel','Logout Complete']
