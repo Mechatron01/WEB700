@@ -7,10 +7,11 @@
 *  Name: Mohammed Muzakkir Ahmed Student ID: 128158219 Date: 21-05-2022
 *
 ********************************************************************************/ 
-
+//check the update
 
 console.log("Hello World");
 
+/* first function   */
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -37,8 +38,6 @@ for(i=0; i<serverPaths.length; i++) {
         }
     }
 }
-
-
 function automateTests(){
 
     testVerbs=['GET','POST']
