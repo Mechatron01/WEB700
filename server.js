@@ -140,25 +140,6 @@ app.get("/courses", (req, res) => {
 })
 
 
-// app.get("/student/:studentnum", (req, res) => {
-//     console.log("Entering student num")
-//     let studentnumber = req.params.studentnum
-//             collegedata.getStudentByNum(studentnumber).then(student => {
-//                  res.send(student)
-//                 // console.log(student)
-//                 // res.render("student", { 
-                
-//                 // data: student ,
-//                 // layout: "main"}); 
-//                 console.log("Student found")
-//             }).catch(err => {
-//                 console.log(err)
-//             })
-           
-//         })
-
-
-
 app.get("/student/:studentnum", (req, res) => {
     console.log("Entering student num")
     let studentnumber = req.params.studentnum
@@ -202,14 +183,7 @@ app.get("/students/add",(req,res)=>
 
 app.post("/students/add",(req,res)=>{
     console.log('student add called')
-    // console.log(JSON.stringify(req.body))
-    // res.send(JSON.stringify(req.body))
-    // collegedata.addStudent(JSON.stringify(req.body))
-    // res.end()
-
-    // res.render('addStudent',{
-    //     layout:false
-    // })
+    res.send("Student added successfully")
 })
 
 app.post("/student/update",(req,res)=>{
@@ -224,6 +198,14 @@ app.post("/student/update",(req,res)=>{
     })
 
 })
+
+app.get("/", (req, res) => {
+    // res.sendFile(path.join(__dirname,"./views/home.html"));
+    res.render('home', {
+        // data: someData,
+        layout: "main" // do not use the default Layout (main.hbs)
+    });
+});
 
 // app.get("/", (req, res) => {
 //     res.sendFile(path.join(__dirname,"./views/home.html"));
