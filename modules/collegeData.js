@@ -158,8 +158,9 @@ var addStudent=function(studentData){
     return new Promise ((resolve,reject)=>{
         let stunum=null;
         let str={}
-
-        str=JSON.parse(studentData)
+        console.log("adding student")
+        console.log(studentData)
+        str=studentData
         console.log(str)
         if (studentData.TA !=true){
             studentData.TA=false

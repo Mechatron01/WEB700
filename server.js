@@ -163,7 +163,7 @@ app.get("/courses/:courseid",(req,res)=>{
     console.log(coursenum)
         collegedata.getCourseById(coursenum).then(cours =>{
             console.log(cours)
-            res.render('courses',{
+            res.render('course',{
                 data: cours,
                 layout: 'main'
             })
@@ -183,7 +183,12 @@ app.get("/students/add",(req,res)=>
 
 app.post("/students/add",(req,res)=>{
     console.log('student add called')
-    res.send("Student added successfully")
+    collegedata.addStudent(req.body).then(()=>{
+        res.redirect("/students")  
+    }
+    ).catch(err=>{
+        res.send(err)
+    })
 })
 
 app.post("/student/update",(req,res)=>{
