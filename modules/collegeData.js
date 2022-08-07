@@ -231,10 +231,6 @@ var updateStudent=function(studentData){
     })
 }
 
-
-
-
-
-    module.exports={initialize,getAllStudents,getTAs,getCourses,getStudentByNum,getStudentsByCourse,addStudent,getCourseById,updateStudent}
+module.exports={initialize,getAllStudents,getTAs,getCourses,getStudentByNum,getStudentsByCourse,addStudent,getCourseById,updateStudent}
 
  

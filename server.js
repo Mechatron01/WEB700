@@ -6,9 +6,10 @@
 * 
 *  Name: Mohammed Muzakkir Ahmed Student ID: 128158219 Date: 23/07/2022
 *
-*  Online (Heroku) Link: ________________________________________________________
+*  Online (Heroku) Link: https://fast-scrubland-97103.herokuapp.com/
 *
-* https://github.com/Mechatron01/web-app-assignment5.git
+* https://github.com/Mechatron01/web-assignment5.git
+
 ********************************************************************************/ 
 
 
@@ -110,7 +111,7 @@ app.get('/students', (req, res) => {
             res.render("students", {message: "no results"});
         })
     
-}})
+}});
 
 
 // app.get("/tas", (req, res) => {
@@ -155,7 +156,7 @@ app.get("/student/:studentnum", (req, res) => {
                 console.log(err)
             })
            
-        })
+        });
 
 app.get("/courses/:courseid",(req,res)=>{
     console.log("getting courses by id ")
